@@ -3,7 +3,13 @@
 <div class="container">
   <page-header title="登录" left-arrow left-text="返回" backPath="/"></page-header>
   <div class="box">
-  <button @click="login">asdas</button>
+    <van-cell-group>
+      <van-field v-model="phone" placeholder="请输入电话号码" label="手机号" />
+      <van-field v-model="vcode" placeholder="请输入验证码" label="短信验证码">
+          <van-button slot="button" size="small" type="primary">发送验证码</van-button>
+      </van-field>
+    </van-cell-group>
+    <van-button></van-button>
   </div>
 </div>
 </template>
@@ -16,8 +22,8 @@ export default {
     // components:{aaa}
     data(){
       return{
-        phone: '18772534056',
-        vcode: '6515'
+        phone: '',
+        vcode: ''
       }
     },
     methods: {

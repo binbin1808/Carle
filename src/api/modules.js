@@ -1,6 +1,6 @@
 
-const baseUrl = 'http://192.168.0.112:3000'
+const baseUrl = 'http://localhost:3000'
 export default {
-  login: baseUrl + '/api/user/login',
+  login: baseUrl + '/captcha/sent',
   test: baseUrl + '/api/index/test'
 }

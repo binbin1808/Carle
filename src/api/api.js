@@ -8,10 +8,11 @@ const service = axios.create({
   // 设置超时时间
   timeout: 6000,
   baseURL: 'http://192.168.0.112:3000',
-  headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+  headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
   // axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 })
 service.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
+service.defaults.withCredentials = true
 // service.defaults.headers.Options['Content-Type'] = 'application/x-www-form-urlencoded'
 /**
  * 请求前拦截

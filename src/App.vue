@@ -1,15 +1,15 @@
 <template>
   <div id="app">
     <router-view/>
-     <BottomMenu v-if="showBottomMenu"></BottomMenu>
+     <!-- <BottomMenu v-if="showBottomMenu"></BottomMenu> -->
   </div>
 </template>
 
 <script>
-import BottomMenu from '@/components/global/bottom-menu'
+// import BottomMenu from '@/components/global/bottom-menu'
 export default {
   name: 'App',
-  components: { BottomMenu },
+  // components: { BottomMenu },
   computed: {
     showBottomMenu () {
       // console.log(this.$route.matched)
